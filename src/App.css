@@ -1,0 +1,142 @@
+.game-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px 15px;
+  background: #f3f0ff;
+  color: #292344;
+  font-family: Arial, sans-serif;
+}
+
+.game-container h1 {
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin: 10px 0;
+  color: #593b9b;
+}
+
+.subtitle {
+  color: #716a83;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 28px;
+}
+
+.board-row {
+  display: flex;
+  gap: 7px;
+}
+
+.tile {
+  width: 55px;
+  height: 55px;
+  border: 2px solid #c8c0dc;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background: white;
+  color: #292344;
+}
+
+.correct {
+  background: #69ad83;
+  border-color: #69ad83;
+  color: white;
+}
+
+.present {
+  background: #e8bd59;
+  border-color: #e8bd59;
+  color: white;
+}
+
+.absent {
+  background: #888394;
+  border-color: #888394;
+  color: white;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.key-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.key {
+  min-width: 30px;
+  height: 48px;
+  padding: 0 8px;
+  border: none;
+  border-radius: 6px;
+  background: #b8a9dc;
+  color: #292344;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.key:hover {
+  background: #9b86cc;
+  color: white;
+}
+
+.result {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.result h2 {
+  color: #593b9b;
+  margin-bottom: 8px;
+}
+
+.result p {
+  color: #716a83;
+}
+
+.restart {
+  margin-top: 12px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 7px;
+  background: #593b9b;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.restart:hover {
+  background: #402875;
+}
+
+@media (max-width: 400px) {
+  .tile {
+    width: 45px;
+    height: 45px;
+  }
+
+  .key {
+    min-width: 25px;
+    padding: 0 5px;
+    font-size: 12px;
+  }
+}
